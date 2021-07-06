@@ -1,4 +1,20 @@
-import catrgory
+print("1: Residential General Purpose")
+print("2: For Hospitals, Schools and Religious Purpose")
+print("3: Low Tension Service for Commercial and Industrial Purpose")
+print("4: Agriculture Service")
+print("5: Low Tension Maximum Demand for Residential Purpose")
+print("6: Low Tension Maximum Demand for other than residential purpose")
+print("7: Low Tension Street Light Service")
+print("8: LT-Electric Vehicle Charging Stations")
+print("9: Low Tension Temporary Supply")
+print("10: High Tension Maximum Demand")
+print("11: High Tension Water ans Sewage Pumping Stations run by AMC")
+print("12: High Tension Maximum Demand Temporary Supply")
+print("13: HT-Electric Vehicle Charging Stations")
+print("14: Metro Traction")
+
+
+import category
 
 class RGP:{
 
@@ -48,7 +64,7 @@ class RGP:{
 
 class GLP:{
 
-	def__init__(General LightingPurpose):
+	def__init__(For Hospitals, Schools and Religious Purpose):
   
   	units=int(input("please enter the number of units you consumed in a month"))
 		if(units<=200)
@@ -355,4 +371,3 @@ class HTMD:{
 
 }  
               
-return 0
