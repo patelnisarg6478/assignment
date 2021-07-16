@@ -1,18 +1,20 @@
-class armst():
+from base import base
 
-    def run(armst):
+class armst(base):
 
-        num = int(input("Enter a number: "))
+    def run(self):
+
+        self.number = int(input("Enter a number: "))
 
         sum = 0
 
-        temp = num
+        temp = self.number
         while temp > 0:
             digit = temp % 10
-        sum += digit ** 3
-        temp //= 10
+            sum += digit ** 3
+            temp //= 10
 
-        if(num == sum):
-            print(num,"is an Armstrong number")
+        if self.number == sum:
+            print(self.number,"is an Armstrong number")
         else:
-            print(num,"is not an Armstrong number")
+            print(self.number,"is not an Armstrong number")

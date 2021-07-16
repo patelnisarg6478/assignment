@@ -1,20 +1,23 @@
-class fibo():
+from base import base
 
-    def run(fibo):
+class fibo(base):
 
-        nterms = int(input())
+    def run(self):
 
-        n1, n2 = 0, 1
+        self.number = int(input("enter a number"))
+
+        n1 = 0
+        n2 = 1
         count = 0
 
-        if nterms <= 0:
+        if self.number <= 0:
             print("Please enter a positive integer")
-        elif(nterms == 1):
-            print("Fibonacci sequence upto",nterms,":")
+        elif self.number == 1:
+            print("Fibonacci sequence upto",self.number,":")
             print(n1)
         else:
             print("Fibonacci sequence:")
-            while(count < nterms):
+            while count < self.number:
                 print(n1)
                 nth = n1 + n2
                 n1 = n2
